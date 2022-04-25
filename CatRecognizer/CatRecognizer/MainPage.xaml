@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CatRecognizer.MainPage">
 
-    <Button Text="Pick Photo"
-        Clicked="OnPickPhotoButtonClicked" />
-
+    <StackLayout>
+        <Button x:Name="pickPhoto" Text="Выберите фотографию"/>
+        <Image x:Name="img"/>
+        <Label x:Name="output"/>
+    </StackLayout>
+    
 </ContentPage>

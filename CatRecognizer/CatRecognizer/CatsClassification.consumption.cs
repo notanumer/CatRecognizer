@@ -5,6 +5,8 @@ using System;
 using System.Linq;
 using System.IO;
 using System.Collections.Generic;
+using Xamarin.Forms;
+
 namespace CatRecognizer
 {
     public partial class CatsClassification

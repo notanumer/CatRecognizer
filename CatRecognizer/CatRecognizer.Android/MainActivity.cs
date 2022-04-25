@@ -7,10 +7,11 @@ using Android.OS;
 using System.Threading.Tasks;
 using System.IO;
 using Android.Content;
+using System.Collections.Generic;
 
 namespace CatRecognizer.Droid
 {
-    [Activity(Label = "CatRecognizer", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(Label = "CatRecognizer", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         internal static MainActivity Instance { get; private set; }
@@ -25,7 +26,7 @@ namespace CatRecognizer.Droid
         }
 
         public static readonly int PickImageId = 1000;
-        public TaskCompletionSource<Stream> PickImageTaskCompletionSource { set; get; }
+        public TaskCompletionSource<Dictionary<string, Stream>> PickImageTaskCompletionSource { set; get; }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
@@ -38,7 +39,10 @@ namespace CatRecognizer.Droid
                     Android.Net.Uri uri = data.Data;
                     Stream stream = ContentResolver.OpenInputStream(uri);
 
-                    PickImageTaskCompletionSource.SetResult(stream);
+                    Dictionary<string, Stream> dic = new Dictionary<string, Stream>();
+                    dic.Add(uri.ToString(), stream);
+                    // Set the Stream as the completion of the Task
+                    PickImageTaskCompletionSource.SetResult(dic);
                 }
                 else
                 {
@@ -46,11 +50,5 @@ namespace CatRecognizer.Droid
                 }
             }
         }
-        //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        //{
-        //    Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        //    base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        //}
     }
 }

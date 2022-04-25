@@ -12,21 +12,37 @@ namespace CatRecognizer
 
     public partial class MainPage : ContentPage
     {
-        static Image image = new Image();
+        Stream stream;
+        string path;
         public MainPage()
         {
             InitializeComponent();
-
+            pickPhoto.Clicked += (s, e) => OnPickPhotoButtonClicked(s, e);
         }
 
         async void OnPickPhotoButtonClicked(object sender, EventArgs e)
         {
             (sender as Button).IsEnabled = false;
-
-            Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
-            if (stream != null)
+            var button = (Button)sender;
+            Dictionary<string, Stream> dic = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
+            foreach (KeyValuePair<string, Stream> currentImage in dic)
             {
-                image.Source = ImageSource.FromStream(() => stream);
+                stream = currentImage.Value;
+
+                path = currentImage.Key;
+
+                if (stream != null)
+                {
+                    img.Source = ImageSource.FromStream(() => stream);
+                }
+
+                var sampleData = new CatsClassification.ModelInput()
+                {
+                    ImageSource = path
+                };
+
+                var result = CatsClassification.Predict(sampleData);
+                output.Text = result.Prediction;
             }
 
             (sender as Button).IsEnabled = true;

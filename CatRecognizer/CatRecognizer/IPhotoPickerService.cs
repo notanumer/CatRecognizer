@@ -8,6 +8,6 @@ namespace CatRecognizer
 {
     public interface IPhotoPickerService
     {
-        Task<Stream> GetImageStreamAsync();
+        Task<Dictionary<string, Stream>> GetImageStreamAsync();
     }
 }
