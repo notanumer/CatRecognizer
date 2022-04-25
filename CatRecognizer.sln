@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatRecognizer.Android", "CatRecognizer\CatRecognizer.Android\CatRecognizer.Android.csproj", "{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatRecognizer", "CatRecognizer\CatRecognizer\CatRecognizer.csproj", "{1F615AD1-3370-483E-924A-F17EBD5AD3BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B350283-EFD0-4D2F-AF2E-7990A01F49A9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1F615AD1-3370-483E-924A-F17EBD5AD3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F615AD1-3370-483E-924A-F17EBD5AD3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F615AD1-3370-483E-924A-F17EBD5AD3BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1F615AD1-3370-483E-924A-F17EBD5AD3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F615AD1-3370-483E-924A-F17EBD5AD3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F615AD1-3370-483E-924A-F17EBD5AD3BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36914CC2-8B00-418F-8643-CBEA015200FF}
+	EndGlobalSection
+EndGlobal

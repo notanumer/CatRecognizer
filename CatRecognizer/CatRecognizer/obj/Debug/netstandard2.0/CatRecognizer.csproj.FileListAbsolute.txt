@@ -1,0 +1,15 @@
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\bin\Debug\netstandard2.0\CatRecognizer.deps.json
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\bin\Debug\netstandard2.0\CatRecognizer.dll
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\bin\Debug\netstandard2.0\CatRecognizer.pdb
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.csproj.AssemblyReference.cache
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.AssemblyInfoInputs.cache
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.AssemblyInfo.cs
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.csproj.CoreCompileInputs.cache
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\XamlC.stamp
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.dll
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\refint\CatRecognizer.dll
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.pdb
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\ref\CatRecognizer.dll
