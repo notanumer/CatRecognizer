@@ -13,3 +13,4 @@ C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.
 C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\refint\CatRecognizer.dll
 C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\CatRecognizer.pdb
 C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\obj\Debug\netstandard2.0\ref\CatRecognizer.dll
+C:\My Projects\CatRecognizer\CatRecognizer\CatRecognizer\bin\Debug\netstandard2.0\CatsClassification.zip
